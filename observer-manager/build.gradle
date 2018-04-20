@@ -9,7 +9,7 @@ ext {
     groupId = 'com.github.fedka27'
     libraryName = 'lib-observer-manager'
     artifact = 'lib-observer-manager'
-    libraryVersion = '0.0.1'
+    libraryVersion = '0.0.3'
     libraryDescription = 'Test description'
 
     siteUrl = 'https://github.com/fedka27/lib-observer-manager'
@@ -41,6 +41,9 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
         }
     }
 
